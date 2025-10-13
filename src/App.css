@@ -1,0 +1,320 @@
+/* Обнуление стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+/* Обнуление стилей */
+
+.App {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* стили хиро блока */
+.hero-block {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-block video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  padding: 0 24px;
+}
+.hero-title {
+  color: white;
+  font-weight: 700;
+  font-size: 72px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -4px;
+
+  margin-bottom: 16px;
+}
+.hero-desc {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 150%;
+
+  margin-bottom: 32px;
+}
+.hero-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+  margin-bottom: 32px;
+
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+.hero-btn:active {
+  transform: scale(0.9);
+}
+.hero-btn-text {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+
+  background-color: white;
+  width: 216px;
+  padding: 15px 12px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-btn-ellipses {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+}
+/* стили хиро блока */
+
+/* стили in one click блока */
+.creation-types {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-top: 168px;
+  padding: 20px 24px;
+
+  width: 100%;
+  max-width: 1392px;
+  border-radius: 42px;
+  height: fit-content;
+
+  background-color: white;
+}
+.creation-types-title {
+  max-width: 357px;
+  color: black;
+  font-weight: 600;
+  font-size: 54px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+.creation-tipes-list {
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1em;
+
+  width: 100%;
+  height: 336px;
+}
+.types-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  position: relative;
+}
+
+.types-list-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.types-list-item video,
+.types-list-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.types-list-item-title {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -1px;
+
+  position: absolute;
+  margin: 24px;
+  z-index: 2;
+}
+/* стили in one click блока */
+
+/* стили how it works блока */
+.guide-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-top: 200px;
+
+  width: 100%;
+  max-width: 1392px;
+  height: fit-content;
+}
+.guide-block-title {
+  color: black;
+  font-weight: 600;
+  font-size: 72px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -2px;
+
+  margin-bottom: 24px;
+}
+.guide-block-grid {
+  height: 486px;
+  width: 100%;
+
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 2fr;
+  grid-column-gap: 1em;
+  row-gap: 1em;
+}
+.guide-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+
+  padding: 20px;
+  border-radius: 30px;
+
+  background-color: white;
+}
+.guide-grid-item-title {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+.guide-grid-item-content {
+  width: 100%;
+  height: 100%;
+  max-height: 256px;
+
+  border-radius: 16px;
+  background-color: #f5f5f5;
+
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  resize: none;
+  overflow: hidden;
+}
+.guide-grid-item-content,
+.guide-grid-item-content:focus {
+  border: none;
+  outline: none;
+}
+.guide-grid-item-content img,
+.guide-grid-item-content video {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+/* стили how it works блока */
+
+/* стили who is it for блока */
+.for-who-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1392px;
+  height: fit-content;
+
+  margin-top: 300px;
+}
+/* стили who is it for блока */

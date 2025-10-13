@@ -1,10 +1,187 @@
-import React from 'react';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import { Header } from "./header/header";
+import { ReactComponent as EllipseSvgBigger } from "./source/svg/Ellipse_bigger.svg";
 
 function App() {
+  const [hasScrolledPastHero, setHasScrolledPastHero] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("EN");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const hero = document.getElementById("hero-block");
+      if (!hero) return;
+
+      const heroBottom = hero.offsetHeight;
+      setHasScrolledPastHero(window.scrollY > heroBottom);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="App">
-      pipidastr
+      <Header
+        selectedLanguage={selectedLanguage}
+        setSelectedLanguage={setSelectedLanguage}
+        hasScrolledPastHero={hasScrolledPastHero}
+      />
+      <div className="hero-block" id="hero-block">
+        <video width={"100%"} autoPlay loop playsInline muted>
+          <source
+            src={require("./source/video/hero_block_video2.mp4")}
+            type="video/mp4"
+          />
+        </video>
+        <div className="hero-content">
+          <div className="hero-title">
+            A whole universe, just one click away
+          </div>
+          <div className="hero-desc">
+            AI platform for instant creation of scripts, visuals,
+            <br />
+            and animations
+          </div>
+          <div className="hero-btn">
+            <div className="hero-btn-text">Get early access</div>
+            <div className="hero-btn-ellipses">
+              <EllipseSvgBigger style={{ width: "6px" }} />
+              <EllipseSvgBigger style={{ width: "18px" }} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="creation-types">
+        <div className="creation-types-title">In one click you can create</div>
+        <div className="creation-tipes-list">
+          <div className="types-list-item">
+            <video width={"100%"} autoPlay loop playsInline muted>
+              <source
+                src={require("./source/video/anime_video.mp4")}
+                type="video/mp4"
+              />
+            </video>
+            <div className="types-list-item-title">Anime</div>
+          </div>
+          <div className="types-list-item">
+            <img
+              width={"100%"}
+              src={require("./source/image/card-manga.jpg")}
+              alt="img"
+            />
+            <div className="types-list-item-title">Manga</div>
+          </div>
+          <div className="types-list-item">
+            <img
+              width={"100%"}
+              src={require("./source/image/card-books.jpg")}
+              alt="img"
+            />
+            <div className="types-list-item-title">Books</div>
+          </div>
+          <div className="types-list-item">
+            <video width={"100%"} autoPlay loop playsInline muted>
+              <source
+                src={require("./source/video/animations_video.mp4")}
+                type="video/mp4"
+              />
+            </video>
+            <div className="types-list-item-title">Animations</div>
+          </div>
+          <div className="types-list-item">
+            <video width={"100%"} autoPlay loop playsInline muted>
+              <source
+                src={require("./source/video/clips_video.mp4")}
+                type="video/mp4"
+              />
+            </video>
+            <div className="types-list-item-title">Clips</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="guide-block">
+        <div className="guide-block-title">How it works</div>
+        <div className="guide-block-grid">
+          <div className="guide-grid-item">
+            <div className="guide-grid-item-title">Write an idea</div>
+            <textarea
+              placeholder="I want an anime about a samurai cat in a parallel universe."
+              className="guide-grid-item-content"
+              style={{ padding: "16px" }}
+              rows={2}
+            />
+          </div>
+          <div className="guide-grid-item">
+            <div className="guide-grid-item-title">Get the script</div>
+            <textarea
+              placeholder="create scenes, dialogues, plot..."
+              className="guide-grid-item-content"
+              style={{ padding: "16px" }}
+              rows={2}
+            />
+          </div>
+          <div className="guide-grid-item">
+            <div className="guide-grid-item-title">Correct</div>
+            <textarea
+              placeholder="I want to change the second dialogue to a more dramatic one."
+              className="guide-grid-item-content"
+              style={{ padding: "16px" }}
+              rows={2}
+            />
+          </div>
+          <div className="guide-grid-item">
+            <div className="guide-grid-item-title">
+              Get storyboards and character designs
+            </div>
+            <div
+              className="guide-grid-item-content"
+              style={{ height: "256px" }}
+            >
+              <img
+                width={"100%"}
+                src={require("./source/image/cat_image.png")}
+                alt="img"
+              />
+            </div>
+          </div>
+          <div className="guide-grid-item">
+            <div className="guide-grid-item-title">
+              Change images and storyboards
+            </div>
+            <div
+              className="guide-grid-item-content"
+              style={{ height: "256px" }}
+            >
+              <img
+                width={"100%"}
+                src={require("./source/image/cat2_image.png")}
+                alt="img"
+              />
+            </div>
+          </div>
+          <div className="guide-grid-item">
+            <div className="guide-grid-item-title">Animate your story</div>
+            <div
+              className="guide-grid-item-content"
+              style={{ height: "256px" }}
+            >
+              <video width={"100%"} autoPlay loop playsInline muted>
+                <source
+                  src={require("./source/video/cat_video.mp4")}
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="for-who-block">
+        
+      </div>
     </div>
   );
 }
