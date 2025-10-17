@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Header } from "./header/header";
 import { ReactComponent as EllipseSvgBigger } from "./source/svg/Ellipse_bigger.svg";
+import { ReactComponent as EllipseSvgBlack } from "./source/svg/Ellipse_black.svg";
 
 function App() {
   const [hasScrolledPastHero, setHasScrolledPastHero] = useState(false);
@@ -43,9 +44,9 @@ function App() {
             <br />
             and animations
           </div>
-          <div className="hero-btn">
-            <div className="hero-btn-text">Get early access</div>
-            <div className="hero-btn-ellipses">
+          <div className="get-invite-btn" style={{ marginBottom: "32px" }}>
+            <div className="get-invite-btn-text">Get early access</div>
+            <div className="get-invite-btn-ellipses">
               <EllipseSvgBigger style={{ width: "6px" }} />
               <EllipseSvgBigger style={{ width: "18px" }} />
             </div>
@@ -180,8 +181,96 @@ function App() {
       </div>
 
       <div className="for-who-block">
-        
+        <div className="for-who-column" style={{ maxWidth: "624px" }}>
+          <p
+            style={{
+              fontSize: "100px",
+              fontWeight: "700",
+              lineHeight: "105%",
+              color: "black",
+            }}
+          >
+            Who is this for?
+          </p>
+          <p style={{ fontSize: "28px" }}>
+            Creators, marketers, screenwriters, teachers, students — everyone
+            will find their way to use StoryCraft.
+          </p>
+        </div>
+        <div className="for-who-column" style={{ maxWidth: "493px" }}>
+          <p>
+            Producing your own book, manga, or anime is expensive and
+            complicated.
+          </p>
+          <p>Or it requires knowledge of many different tools at once.</p>
+          <p>
+            We've gathered everything in one place, AI speeds up the process,
+            and the results are top-quality.
+          </p>
+        </div>
       </div>
+
+      <div className="hundred-plus-title">
+        <p>
+          More{" "}
+          <span
+            style={{
+              color: "white",
+              backgroundColor: "black",
+              padding: "4px 10px",
+              borderRadius: "24px",
+            }}
+          >
+            100+
+          </span>{" "}
+          than people have signed up for closed access
+        </p>
+        <p style={{ fontSize: "40px", color: "#747474" }}>
+          be one of the first
+        </p>
+      </div>
+
+      <div className="get-invite-block">
+        <p>We will send you an invitation</p>
+        <div className="get-invite-btn">
+          <div className="get-invite-btn-ellipses">
+            <EllipseSvgBlack style={{ width: "18px" }} />
+            <EllipseSvgBlack style={{ width: "6px" }} />
+          </div>
+          <div
+            className="get-invite-btn-text"
+            style={{ backgroundColor: "black", color: "white" }}
+          >
+            Get early access
+          </div>
+          <div className="get-invite-btn-ellipses">
+            <EllipseSvgBlack style={{ width: "6px" }} />
+            <EllipseSvgBlack style={{ width: "18px" }} />
+          </div>
+        </div>
+      </div>
+
+      <div className="faq-block">
+        <div className="faq-title">FAQ</div>
+        <div className="faq-question">
+          <p
+            style={{ fontSize: "18px", fontWeight: "600", lineHeight: "105%" }}
+          >
+            How much does it?
+          </p>
+          <p>During the beta phase, access is free.</p>
+        </div>
+        <div className="faq-question">
+          <p
+            style={{ fontSize: "18px", fontWeight: "600", lineHeight: "105%" }}
+          >
+            How much does it?
+          </p>
+          <p>During the beta phase, access is free.</p>
+        </div>
+      </div>
+
+      <div className="footer"></div>
     </div>
   );
 }

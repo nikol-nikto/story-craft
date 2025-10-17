@@ -99,21 +99,22 @@ ol {
 
   margin-bottom: 32px;
 }
-.hero-btn {
+/* стили хиро блока */
+
+/* стили get invite кнопки */
+.get-invite-btn {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5px;
 
-  margin-bottom: 32px;
-
   transition: background-color 0.2s ease, transform 0.1s ease;
   cursor: pointer;
 }
-.hero-btn:active {
+.get-invite-btn:active {
   transform: scale(0.9);
 }
-.hero-btn-text {
+.get-invite-btn-text {
   color: black;
   font-weight: 600;
   font-size: 18px;
@@ -128,13 +129,13 @@ ol {
   flex-direction: column;
   align-items: center;
 }
-.hero-btn-ellipses {
+.get-invite-btn-ellipses {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 3px;
 }
-/* стили хиро блока */
+/* стили get invite кнопки */
 
 /* стили in one click блока */
 .creation-types {
@@ -317,4 +318,116 @@ ol {
 
   margin-top: 300px;
 }
+.for-who-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 20px;
+  width: 100%;
+
+  color: #373737;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  line-height: 150%;
+}
 /* стили who is it for блока */
+
+/* стили для более ста зарегались */
+.hundred-plus-title {
+  margin-top: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+
+  width: 100%;
+  max-width: 733px;
+
+  color: black;
+  font-weight: 600;
+  font-size: 64px;
+  font-family: "Inter", sans-serif;
+  line-height: 105%;
+  letter-spacing: -3px;
+  text-align: center;
+}
+/* стили для более ста зарегались */
+
+/* стили we'll send invite блока */
+.get-invite-block {
+  margin-top: 270px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.get-invite-block p {
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: -2.5px;
+  line-height: 105%;
+  text-align: center;
+
+  width: 100%;
+  max-width: 324px;
+}
+/* стили we'll send invite блока */
+
+/* стили FAQ блока */
+.faq-block {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+  max-width: 448px;
+}
+.faq-title {
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: -2.5px;
+  line-height: 105%;
+
+  margin-bottom: 20px;
+}
+.faq-question {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 150%;
+}
+/* стили FAQ блока */
+
+/* стили футера */
+.footer {
+  width: 100%;
+  background-color: white;
+
+  margin-top: 250px;
+
+  height: min-content;
+  min-height: 276px;
+}
+/* стили футера */
