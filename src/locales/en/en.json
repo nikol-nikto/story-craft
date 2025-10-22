@@ -1,0 +1,88 @@
+{
+  "header": {
+    "about": "About",
+    "how_it_works": "How it works",
+    "get_access": "Get Access",
+    "join_us": "Join us"
+  },
+  "hero": {
+    "title": "A whole universe, just one click away",
+    "subtitle": "AI platform for instant creation of scripts, visuals, and animations",
+    "button": "Get early access"
+  },
+  "in_one_click": {
+    "title": "In one click you can create",
+    "anime": "Anime",
+    "manga": "Manga",
+    "books": "Books",
+    "animations": "Animations",
+    "clips": "Clips"
+  },
+  "how_it_works": {
+    "title": "How it works",
+    "tips": {
+      "tips1": {
+        "title": "Write an idea",
+        "text": "I want an anime about a samurai cat in a parallel universe."
+      },
+      "tips2": {
+        "title": "Get the script",
+        "text": "create scenes, dialogues, plot..."
+      },
+      "tips3": {
+        "title": "Correct",
+        "text": "I want to change the second dialogue to a more dramatic one."
+      }
+    },
+    "examples": {
+      "title1": "Get storyboards and character designs",
+      "title2": "Change images and storyboards",
+      "title3": "Animate your story"
+    }
+  },
+  "for_who": {
+    "title": "Who is this for?",
+    "subtitle": "Creators, marketers, screenwriters, teachers, students — everyone will find their way to use StoryCraft.",
+    "text1": "Producing your own book, manga, or anime is expensive and complicated.",
+    "text2": "Or it requires knowledge of many different tools at once.",
+    "text3": "We've gathered everything in one place, AI speeds up the process, and the results are top-quality."
+  },
+  "hundred_plus": {
+    "title_row1": {
+      "before_hundred": "More",
+      "hundred": "100+",
+      "after_hundred": "than people"
+    },
+    "title_row2": "have signed up for closed",
+    "title_row3": "access",
+    "subtitle": "be one of the first"
+  },
+  "get_early_access": {
+    "title": {
+      "row1": "We will send you",
+      "row2": "an invitation"
+    },
+    "button": "Get early access"
+  },
+  "faq": {
+    "title": "FAQ",
+    "question1": {
+      "title": "How much does it?",
+      "text": "During the beta phase, access is free."
+    },
+    "question2": {
+      "title": "When will access start?",
+      "text": "We will send out invitations as soon as they are ready."
+    }
+  },
+  "modal": {
+    "title": {
+      "row1": "Be the first to create",
+      "row2": "your masterpiece",
+      "row3": "in one click"
+    },
+    "input_name": "Name",
+    "input_email": "Email",
+    "button": "Forward to the Future"
+  }
+}
