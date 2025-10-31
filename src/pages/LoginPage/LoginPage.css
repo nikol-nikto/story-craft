@@ -1,0 +1,42 @@
+.login-page-header {
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5em 0;
+
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: -0.03em;
+
+  color: black;
+
+  background: #f5f5f5;
+  border: 1px solid #e4e4e4;
+  z-index: 1000;
+}
+
+.login-page-header a {
+  color: #3672f3;
+}
+
+.login-page-header a:hover {
+  color: #7ba0ed;
+}
+
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5em 2em;
+
+  background-color: #F5F5F5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

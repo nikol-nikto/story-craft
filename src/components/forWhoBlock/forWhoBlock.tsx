@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./forWhoBlock.css";
+import "./ForWhoBlock.css";
 import { useTranslation } from "react-i18next";
 
 function ForWhoBlock() {

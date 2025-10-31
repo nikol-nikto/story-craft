@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./hundredPlus.css";
+import "./HundredPlus.css";
 import { useTranslation } from "react-i18next";
 
 function HundredPlusBlock() {

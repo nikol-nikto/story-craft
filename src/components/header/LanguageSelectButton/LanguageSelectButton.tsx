@@ -1,8 +1,8 @@
 import React from "react";
-import "./languageSelectBtn.css";
+import "./LanguageSelectButton.css";
 import i18n from "../../../locales/i18n";
 
-interface LanguageSelectBtnProps {
+interface LanguageSelectButtonProps {
   selectedLanguage: string;
   setSelectedLanguage: Function;
   setIsSelectOpened: Function;
@@ -10,13 +10,13 @@ interface LanguageSelectBtnProps {
   hasScrolledPastHero: boolean;
 }
 
-function LanguageSelectBtn({
+function LanguageSelectButton({
   selectedLanguage,
   setSelectedLanguage,
   setIsSelectOpened,
   isSelectOpened,
   hasScrolledPastHero,
-}: LanguageSelectBtnProps) {
+}: LanguageSelectButtonProps) {
   const handleLanguageItemClick = (lan: string) => {
     setSelectedLanguage(lan);
     i18n.changeLanguage(lan);
@@ -93,4 +93,4 @@ function LanguageSelectBtn({
   );
 }
 
-export default LanguageSelectBtn;
+export default LanguageSelectButton;

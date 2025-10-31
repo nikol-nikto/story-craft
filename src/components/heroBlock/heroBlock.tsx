@@ -1,8 +1,8 @@
 import * as React from "react";
-import "./heroBlock.css";
+import "./HeroBlock.css";
 import { useTranslation } from "react-i18next";
 
-import GetInviteBtnWhite from "../getInviteBtn/getInviteBtnWhite";
+import InviteButtonWhite from "../InviteButton/InviteButtonWhite";
 
 interface HeroBlockProps {
   isModalOpened: boolean;
@@ -27,7 +27,7 @@ function HeroBlock({ isModalOpened, setIsModalOpened }: HeroBlockProps) {
         <div className="hero-desc">{t("hero.subtitle")}</div>
 
         <div className="hero-btn" onClick={() => setIsModalOpened(true)}>
-          <GetInviteBtnWhite text={t("hero.button")} />
+          <InviteButtonWhite text={t("hero.button")} />
         </div>
       </div>
     </div>

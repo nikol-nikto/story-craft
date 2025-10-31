@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./oneClick.css";
+import "./OneClick.css";
 import { useTranslation } from "react-i18next";
 
 function OneClick() {

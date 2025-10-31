@@ -1,12 +1,12 @@
 import * as React from "react";
-import "./getInviteBtn.css";
+import "./InviteButton.css";
 import { ReactComponent as EllipseSvgBlack } from "../../assets/svg/Ellipse_black.svg";
 
-interface GetInviteBtnBlackProps {
+interface InviteButtonBlackProps {
   text: string;
 }
 
-function GetInviteBtnBlack({ text }: GetInviteBtnBlackProps) {
+function InviteButtonBlack({ text }: InviteButtonBlackProps) {
   return (
     <div className="get-invite-btn">
       <div className="get-invite-btn-ellipses">
@@ -26,4 +26,4 @@ function GetInviteBtnBlack({ text }: GetInviteBtnBlackProps) {
   );
 }
 
-export default GetInviteBtnBlack;
+export default InviteButtonBlack;

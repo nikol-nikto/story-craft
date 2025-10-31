@@ -1,8 +1,8 @@
 import * as React from "react";
-import "./faqBlock.css";
+import "./FAQBlock.css";
 import { useTranslation } from "react-i18next";
 
-function FaqBlock() {
+function FAQBlock() {
   const { t } = useTranslation();
 
   return (
@@ -24,4 +24,4 @@ function FaqBlock() {
   );
 }
 
-export default FaqBlock;
+export default FAQBlock;

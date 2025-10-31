@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./footer.css";
+import "./Footer.css";
 import { useTranslation } from "react-i18next";
 import { ReactComponent as EllipseSvgBlack } from "../../assets/svg/Ellipse_black.svg";
 
