@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import "./modal.css";
-import GetInviteBtnBlack from "../getInviteBtn/getInviteBtnBlack";
+import "./Modal.css";
 import { emailService } from "../../services/emailService";
+import InviteButtonBlack from "../InviteButton/InviteButtonBlack";
 
 interface ModalProps {
   setIsModalOpened: Function;
@@ -84,7 +84,7 @@ function Modal({ isModalOpened, setIsModalOpened }: ModalProps) {
         </div>
 
         <button type="submit">
-          <GetInviteBtnBlack text={t("modal.button")} />
+          <InviteButtonBlack text={t("modal.button")} />
         </button>
       </form>
     </>

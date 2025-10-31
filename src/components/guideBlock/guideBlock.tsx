@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./guideBlock.css";
+import "./GuideBlock.css";
 import { useTranslation } from "react-i18next";
 
 function GuideBlock() {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./header.css";
-import LanguageSelectBtn from "./languageSelectBtn/languageSelectBtn";
+import "./Header.css";
+import LanguageSelectButton from "./LanguageSelectButton/LanguageSelectButton";
 import { ReactComponent as BurgerBtn } from "../../assets/svg/stash_burger-classic.svg";
 import { ReactComponent as BurgerBtnBlack } from "../../assets/svg/stash_burger-classic copy.svg";
 import { ReactComponent as CloseBtn } from "../../assets/svg/material-symbols_close-rounded.svg";
@@ -55,7 +55,7 @@ function Header({
             {t("header.get_access")}
           </a>
 
-          <LanguageSelectBtn
+          <LanguageSelectButton
             selectedLanguage={selectedLanguage}
             setSelectedLanguage={setSelectedLanguage}
             setIsSelectOpened={setIsSelectOpened}
@@ -65,7 +65,7 @@ function Header({
         </div>
 
         <div className="mobile-navbar">
-          <LanguageSelectBtn
+          <LanguageSelectButton
             selectedLanguage={selectedLanguage}
             setSelectedLanguage={setSelectedLanguage}
             setIsSelectOpened={setIsSelectOpened}
